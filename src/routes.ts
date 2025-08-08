@@ -1,0 +1,7 @@
+export const GETTASKS='https://orderedlife.onrender.com/getTasks/'
+export const LOGIN = 'https://orderedlife.onrender.com/login'
+export const CHECK = 'https://orderedlife.onrender.com/checkTask/'
+export const UNCHECK = 'https://orderedlife.onrender.com/uncheckTask/'
+export const DELETETASK = 'https://orderedlife.onrender.com/deleteTask/'
+export const ADDTASK = 'https://orderedlife.onrender.com/createTask'
+export const REGISTER = 'https://orderedlife.onrender.com/register'
