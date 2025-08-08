@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { register } from "../Actions/authActions";
+import { Link } from "react-router-dom";
 
 export function RegisterForm () {
   const [mensaje , setMensaje] = useState<string | null>(null)
@@ -35,7 +36,7 @@ export function RegisterForm () {
         <input type="number" name="age" placeholder="age"/>
         <button>Register</button>
         {mensaje && <p>{mensaje}</p>}
-        <a href="/">Log In</a>
+        <Link to={'/'}>Log In</Link>
       </form>
     </>
   )

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import type React from "react"
 import { useUserStore } from "../stores/authStore.ts"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 import { LOGIN } from "../routes.ts"
 
@@ -66,7 +66,7 @@ export function Loginform () {
         <button disabled={loading} type='submit'>Log In</button>
         {error && <p className="error">{error}</p>}
         {loading && <p>Loading...</p>}
-        <a href="/register">Register here</a>
+        <Link to={'/register'}>Register here</Link>
       </form>
     </>
   )
